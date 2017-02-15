@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 12px;
+        min-width: 240px;
+        text-align: right;
+      }
+      input {
+        width: 50px;
+        border: 1px solid gray;
+      }
+      input:focus {
+        outline: none;
+      }
+      input:invalid {
+        border-color: red;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Minimální doba na přestup: <input type="number" step="1" size="1" id="min" value="10" min="-1" max="1439"> minut</label><br>
+      <label>Maximální doba na přestup: <input type="number" step="1" size="1" id="max" value="60" min="-1" max="1439"> minut</label><br>
+      <button type="submit">Nastavit a vyhledat</button>
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
